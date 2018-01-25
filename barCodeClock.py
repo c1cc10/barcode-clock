@@ -39,10 +39,10 @@ while 1:
                 pygame.quit() 
                 exit(0)
     else:
-  	try:
+	try:
     	    timeCode = code128_test.code128_image(getDataOra())
     	    timeImage = timeCode.convert('RGBA')
     	    player = pygame.image.frombuffer(timeImage.tobytes(), timeImage.size, timeImage.mode)
-    	except Exception, e:
+	except Exception, e:
             print("everySecond() error: %s" % e)
 
